@@ -1,12 +1,8 @@
-
-
-#app {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body {
+  background-color:grey; 
+  font-size: 25px;
+  font-style: oblique;
+  font-weight: bold;
   text-align: center;
-  color:aliceblue;
-  margin-top: 60px;
-
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
