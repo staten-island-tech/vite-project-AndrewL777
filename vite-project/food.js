@@ -63,4 +63,28 @@ const foods = [
     price: 7,
     img: [""],
   },
+  {
+    name: "",
+    vegan: "no",
+    price: 7,
+    img: [""],
+  },
+  {
+    name: "",
+    vegan: "no",
+    price: 7,
+    img: [""],
+  },
+  {
+    name: "",
+    vegan: "no",
+    price: 7,
+    img: [""],
+  },
+  {
+    name: "",
+    vegan: "no",
+    price: 7,
+    img: [""],
+  },
 ];
