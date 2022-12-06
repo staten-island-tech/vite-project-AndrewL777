@@ -52,20 +52,15 @@ const foods = [
     ],
   },
   {
-    name: "Pi Dan Shou Rou Zhou",
+    name: "",
     vegan: "no",
     price: 7,
-    img: [
-      "https://iamhomesteader.com/wp-content/uploads/2022/03/wonton-soup-1.jpg",
-    ],
+    img: [""],
   },
   {
-    name: "Pi Dan Shou Rou Zhou",
+    name: "",
     vegan: "no",
     price: 7,
-    img: [
-      "https://iamhomesteader.com/wp-content/uploads/2022/03/wonton-soup-1.jpg",
-    ],
+    img: [""],
   },
 ];
-foods;
