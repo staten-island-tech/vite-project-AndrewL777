@@ -28,11 +28,11 @@ const foods = [
     ],
   },
   {
-    name: "Baozi",
+    name: "Chrysanthemum Tea",
     vegan: "No",
     price: 7,
     img: [
-      "https://i.pinimg.com/736x/4d/77/31/4d77315241576538f69b5678365f4ff0.jpg",
+      "https://draxe.com/wp-content/uploads/2020/05/ChrysanthemumTea_FB.jpg",
     ],
   },
   {
@@ -52,16 +52,20 @@ const foods = [
     ],
   },
   {
-    name: "",
+    name: "Red Bean Bun",
     vegan: "no",
     price: 7,
-    img: [""],
+    img: [
+      "https://www.chinayummyfood.com/wp-content/uploads/2019/08/Red-Bean-Buns-1-500x500.jpg",
+    ],
   },
   {
-    name: "",
+    name: "Sweet Egg Bun",
     vegan: "no",
     price: 7,
-    img: [""],
+    img: [
+      "https://www.yumofchina.com/wp-content/uploads/2018/08/egg-yolk-bun.jpg",
+    ],
   },
   {
     name: "",
