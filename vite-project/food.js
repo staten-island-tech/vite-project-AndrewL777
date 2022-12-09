@@ -4,14 +4,14 @@ const foods = [
     vegetarian: "Yes",
     price: 5,
     img: 3,
-    type: Food,
+    type: Dish,
   },
   {
     name: "Pi Dan Shou Rou Zhou",
     vegan: "No",
     price: 7,
     img: ["142"],
-    type: Food,
+    type: Dish,
   },
   {
     name: "Sweet and Sour Pork",
@@ -20,20 +20,20 @@ const foods = [
     img: [
       "https://cafedelites.com/wp-content/uploads/2018/08/sweet-and-sour-pork-5.jpg",
     ],
-    type: Food,
+    type: Dish,
   },
   {
     name: "Wonton Soup",
-    vegan: "no",
+    vegan: "No",
     price: 7,
     img: [
       "https://iamhomesteader.com/wp-content/uploads/2022/03/wonton-soup-1.jpg",
     ],
-    type: Food,
+    type: Dish,
   },
   {
     name: "Chrysanthemum Tea",
-    vegan: "No",
+    vegan: "Yes",
     price: 7,
     img: [
       "https://draxe.com/wp-content/uploads/2020/05/ChrysanthemumTea_FB.jpg",
@@ -56,11 +56,11 @@ const foods = [
     img: [
       "https://allwaysdelicious.com/wp-content/uploads/2020/03/char-siu-vert-1.jpg",
     ],
-    type: Food,
+    type: Dish,
   },
   {
     name: "Red Bean Bun",
-    vegan: "no",
+    vegan: "Yes",
     price: 7,
     img: [
       "https://www.chinayummyfood.com/wp-content/uploads/2019/08/Red-Bean-Buns-1-500x500.jpg",
@@ -78,7 +78,7 @@ const foods = [
   },
   {
     name: "Wong Lo Kat / Wanglaoji ",
-    vegan: "no",
+    vegan: "Yes",
     price: 7,
     img: [""],
     type: Drink,
@@ -86,25 +86,11 @@ const foods = [
 
   {
     name: "Apple Sidra",
-    vegan: "no",
+    vegan: "Yes",
     price: 7,
     img: [
       "https://cdn.shopify.com/s/files/1/0271/6634/3237/products/applesidra.jpg?v=1604553191",
     ],
     type: Drink,
-  },
-  {
-    name: "",
-    vegan: "no",
-    price: 7,
-    img: [""],
-    type: 2,
-  },
-  {
-    name: "",
-    vegan: "no",
-    price: 7,
-    img: [""],
-    type: 2,
   },
 ];
