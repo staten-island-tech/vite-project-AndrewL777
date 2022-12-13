@@ -98,5 +98,22 @@ const foods = [
 export { foods };
 
 foods
-  .filter((food) => food.base.HP > 75)
-  .forEach((pokemon) => console.log(pokemon.name, pokemon.base.HP));
+  .filter((food) => food.type.includes("Dish"))
+  .forEach((food) => console.log(food.name));
+// dish
+
+foods
+  .filter((food) => food.type.includes("Dessert"))
+  .forEach((food) => console.log(food.name));
+// dessert
+
+// foods
+//   .filter((food) => food.vegan.includes("Yes"))
+//   .forEach((food) => console.log(food.name));
+
+function drinks() {
+  foods
+    .filter((food) => food.type.includes("Drink"))
+    .forEach((food) => console.log(food.name));
+  // drinks
+}
