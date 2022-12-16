@@ -117,4 +117,3 @@ function drinks() {
     .forEach((food) => console.log(food.name));
   // drinks
 }
-
