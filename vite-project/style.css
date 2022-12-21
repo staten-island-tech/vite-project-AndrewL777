@@ -57,7 +57,7 @@ body,
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 25px;
-  width: 28%;
+  width: 29%;
   height: 25rem;
   background: whitesmoke;
   border: 2px solid black;
@@ -67,6 +67,7 @@ body,
 }
 
 .images {
+  margin-top: 15px;
   width: 50%;
   height: 26vh;
 }
