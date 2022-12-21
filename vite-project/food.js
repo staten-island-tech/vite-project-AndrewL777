@@ -1,96 +1,86 @@
 const foods = [
   {
     name: "Tomato Fried Eggs",
-    vegetarian: "Yes",
+    vegan: false,
     price: 5,
-    img: ["142"],
+    img: "https://www.yumofchina.com/wp-content/uploads/2018/08/egg-yolk-bun.jpg",
     type: "Dish",
   },
   {
     name: "Pi Dan Shou Rou Zhou",
-    vegan: "No",
+    vegan: false,
     price: 7,
-    img: ["142"],
+    img: "https://www.yumofchina.com/wp-content/uploads/2018/08/egg-yolk-bun.jpg",
     type: "Dish",
   },
   {
     name: "Sweet and Sour Pork",
-    vegan: "No",
+    vegan: false,
     price: 7,
-    img: [
-      "https://cafedelites.com/wp-content/uploads/2018/08/sweet-and-sour-pork-5.jpg",
-    ],
+    img: "https://cafedelites.com/wp-content/uploads/2018/08/sweet-and-sour-pork-5.jpg",
+
     type: "Dish",
   },
   {
     name: "Wonton Soup",
-    vegan: "No",
+    vegan: false,
     price: 7,
-    img: [
-      "https://iamhomesteader.com/wp-content/uploads/2022/03/wonton-soup-1.jpg",
-    ],
+    img: "https://iamhomesteader.com/wp-content/uploads/2022/03/wonton-soup-1.jpg",
+
     type: "Dish",
   },
   {
     name: "Chrysanthemum Tea",
-    vegan: "Yes",
+    vegan: true,
     price: 7,
-    img: [
-      "https://draxe.com/wp-content/uploads/2020/05/ChrysanthemumTea_FB.jpg",
-    ],
+    img: "https://draxe.com/wp-content/uploads/2020/05/ChrysanthemumTea_FB.jpg",
+
     type: "Drink",
   },
   {
     name: "Sesame Balls",
-    vegan: "Yes",
+    vegan: true,
     price: 7,
-    img: [
-      "https://zhangcatherine.com/wp-content/uploads/2022/01/15001500-5.jpg",
-    ],
+    img: "https://www.yumofchina.com/wp-content/uploads/2018/08/egg-yolk-bun.jpg",
     type: "Dessert",
   },
   {
     name: "Char Siu",
-    vegan: "No",
+    vegan: false,
     price: 7,
-    img: [
-      "https://allwaysdelicious.com/wp-content/uploads/2020/03/char-siu-vert-1.jpg",
-    ],
+    img: "https://allwaysdelicious.com/wp-content/uploads/2020/03/char-siu-vert-1.jpg",
+
     type: "Dish",
   },
   {
     name: "Red Bean Bun",
-    vegan: "Yes",
+    vegan: true,
     price: 7,
-    img: [
-      "https://www.chinayummyfood.com/wp-content/uploads/2019/08/Red-Bean-Buns-1-500x500.jpg",
-    ],
+    img: "https://www.chinayummyfood.com/wp-content/uploads/2019/08/Red-Bean-Buns-1-500x500.jpg",
+
     type: "Dessert",
   },
   {
     name: "Sweet Egg Bun",
-    vegan: "no",
+    vegan: false,
     price: 7,
-    img: [
-      "https://www.yumofchina.com/wp-content/uploads/2018/08/egg-yolk-bun.jpg",
-    ],
+    img: "https://www.yumofchina.com/wp-content/uploads/2018/08/egg-yolk-bun.jpg",
+
     type: "Dessert",
   },
   {
     name: "Wong Lo Kat / Wanglaoji ",
-    vegan: "Yes",
+    vegan: false,
     price: 7,
-    img: [""],
+    img: "https://www.yumofchina.com/wp-content/uploads/2018/08/egg-yolk-bun.jpg",
     type: "Drink",
   },
 
   {
     name: "Apple Sidra",
-    vegan: "Yes",
+    vegan: false,
     price: 7,
-    img: [
-      "https://cdn.shopify.com/s/files/1/0271/6634/3237/products/applesidra.jpg?v=1604553191",
-    ],
+    img: "https://www.yumofchina.com/wp-content/uploads/2018/08/egg-yolk-bun.jpg",
     type: "Drink",
   },
 ];
