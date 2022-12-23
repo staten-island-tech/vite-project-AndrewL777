@@ -9,14 +9,16 @@ const Dom = {
   des: document.getElementById("des"),
 };
 
-Dom.main.addEventListener("click", function (event) {
+Dom.main.addEventListener("click", () => {
+  const men = document.querySelector('#men');
+
   everything();
-  event.preventDefault();
+
 });
 
 function everything() {
-  foods.forEach((thing) =>
-    insertAdjacentHTML(
+  foods.forEach(
+    foods.insertAdjacentHTML(
       "afterend",
       `
     <div class="card"> 
@@ -29,18 +31,7 @@ function everything() {
   );
 }
 
-foods.forEach(
-  foods.insertAdjacentHTML(
-    "afterend",
-    `
-    <div class="card"> 
-    <img class src="${foods.img}" /><img>
-    <h2 class="name">${foods.name}</h2>
-    <h3 class="price">${foods.price}</h3>
-    </div>
-    `
-  )
-);
+
 // function drinks() {
 // Dom.foods
 //   .filter((food) => food.type.includes("Drink"))
