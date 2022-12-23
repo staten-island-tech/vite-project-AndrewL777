@@ -9,68 +9,91 @@ const Dom = {
   des: document.getElementById("des"),
 };
 
-Dom.main.addEventListener("click", function (event) {
-  everything();
-  event.preventDefault();
+Dom.des.addEventListener("click", function () {
+  Desserts();
+  reset();
 });
 
-function everything() {
-  foods.forEach((thing) =>
-    insertAdjacentHTML(
-      "afterend",
+Dom.drink.addEventListener("click", function () {
+  Drinks();
+  reset();
+});
+
+Dom.veg.addEventListener("click", function () {
+  Vegans();
+  reset();
+});
+
+function Desserts() {
+  foods
+    .filter((menu) => menu.type === "Dessert")
+    .forEach((menu) =>
+      Dom.men.insertAdjacentHTML(
+        "beforeend",
+        `
+      <div class="card">
+<h1>${menu.name}</h1>
+<img class src="${menu.img}" /><img>
+<h3 class="price">${menu.price}</h3>
+
+
+</div>
+`
+      )
+    );
+}
+
+function Drinks() {
+  foods
+    .filter((menu) => menu.type === "Drink")
+    .forEach((menu) =>
+      Dom.men.insertAdjacentHTML(
+        "beforeend",
+        `
+      <div class="card">
+<h1>${menu.name}</h1>
+<img class src="${menu.img}" /><img>
+<h3 class="price">${menu.price}</h3>
+
+
+</div>
+`
+      )
+    );
+}
+
+function Vegans() {
+  foods
+    .filter((menu) => menu.vegan === "true")
+    .forEach((menu) =>
+      Dom.men.insertAdjacentHTML(
+        "beforeend",
+        `
+      <div class="card">
+<h1>${menu.name}</h1>
+<img class src="${menu.img}" /><img>
+<h3 class="price">${menu.price}</h3>
+
+
+</div>
+`
+      )
+    );
+}
+
+function Allfoods() {
+  foods.forEach((menu) =>
+    Dom.men.insertAdjacentHTML(
+      "beforeend",
       `
-    <div class="card"> 
-    <img class src="${foods.img}" /><img>
-    <h2 class="name">${foods.name}</h2>
-    <h3 class="price">${foods.price}</h3>
-    </div>
-    `
+      <div class="card">
+<h1>${menu.name}</h1>
+<img class src="${menu.img}" /><img>
+<h3 class="price">${menu.price}</h3>
+</div>
+`
     )
   );
 }
 
-foods.forEach(
-  foods.insertAdjacentHTML(
-    "afterend",
-    `
-    <div class="card"> 
-    <img class src="${foods.img}" /><img>
-    <h2 class="name">${foods.name}</h2>
-    <h3 class="price">${foods.price}</h3>
-    </div>
-    `
-  )
-);
-// function drinks() {
-// Dom.foods
-//   .filter((food) => food.type.includes("Drink"))
-//   .forEach((food) =>
-//     insertAdjacentHTML(
-//         "afterend",
-//         `
-//     <div class="card">
-//     <img class src="${foods.img}" /><img>
-//     <h2 class="name">${foods.name}</h2>
-//     <h3 class="price">${foods.price}</h3>
-//     </div>
-//     `
-//       )
-//     );
-// }
-
-// function allfood() {
-//   Dom.foods
-//     .filter((food) => food.type.includes("Dish"))
-//     .forEach((food) =>
-//       insertAdjacentHTML(
-//         "afterend",
-//         `
-//     <div class="card">
-//     <img class src="${foods.img}" /><img>
-//     <h2 class="name">${foods.name}</h2>
-//     <h3 class="price">${foods.price}</h3>
-//     </div>
-//     `
-//       )
-//     );
-// }
+Allfoods();

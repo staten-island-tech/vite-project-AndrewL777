@@ -1,21 +1,21 @@
 const foods = [
   {
     name: "Tomato Fried Eggs",
-    vegan: false,
+    vegan: "false",
     price: 5,
     img: "https://www.yumofchina.com/wp-content/uploads/2018/08/egg-yolk-bun.jpg",
     type: "Dish",
   },
   {
     name: "Pi Dan Shou Rou Zhou",
-    vegan: false,
+    vegan: "false",
     price: 7,
     img: "https://www.yumofchina.com/wp-content/uploads/2018/08/egg-yolk-bun.jpg",
     type: "Dish",
   },
   {
     name: "Sweet and Sour Pork",
-    vegan: false,
+    vegan: "false",
     price: 7,
     img: "https://cafedelites.com/wp-content/uploads/2018/08/sweet-and-sour-pork-5.jpg",
 
@@ -23,7 +23,7 @@ const foods = [
   },
   {
     name: "Wonton Soup",
-    vegan: false,
+    vegan: "false",
     price: 7,
     img: "https://iamhomesteader.com/wp-content/uploads/2022/03/wonton-soup-1.jpg",
 
@@ -31,7 +31,7 @@ const foods = [
   },
   {
     name: "Chrysanthemum Tea",
-    vegan: true,
+    vegan: "true",
     price: 7,
     img: "https://draxe.com/wp-content/uploads/2020/05/ChrysanthemumTea_FB.jpg",
 
@@ -39,14 +39,14 @@ const foods = [
   },
   {
     name: "Sesame Balls",
-    vegan: true,
+    vegan: "true",
     price: 7,
     img: "https://www.yumofchina.com/wp-content/uploads/2018/08/egg-yolk-bun.jpg",
     type: "Dessert",
   },
   {
     name: "Char Siu",
-    vegan: false,
+    vegan: "false",
     price: 7,
     img: "https://allwaysdelicious.com/wp-content/uploads/2020/03/char-siu-vert-1.jpg",
 
@@ -54,7 +54,7 @@ const foods = [
   },
   {
     name: "Red Bean Bun",
-    vegan: true,
+    vegan: "true",
     price: 7,
     img: "https://www.chinayummyfood.com/wp-content/uploads/2019/08/Red-Bean-Buns-1-500x500.jpg",
 
@@ -62,7 +62,7 @@ const foods = [
   },
   {
     name: "Sweet Egg Bun",
-    vegan: false,
+    vegan: "false",
     price: 7,
     img: "https://www.yumofchina.com/wp-content/uploads/2018/08/egg-yolk-bun.jpg",
 
@@ -70,7 +70,7 @@ const foods = [
   },
   {
     name: "Wong Lo Kat / Wanglaoji ",
-    vegan: false,
+    vegan: "false",
     price: 7,
     img: "https://www.yumofchina.com/wp-content/uploads/2018/08/egg-yolk-bun.jpg",
     type: "Drink",
@@ -78,7 +78,7 @@ const foods = [
 
   {
     name: "Apple Sidra",
-    vegan: false,
+    vegan: "false",
     price: 7,
     img: "https://www.yumofchina.com/wp-content/uploads/2018/08/egg-yolk-bun.jpg",
     type: "Drink",
