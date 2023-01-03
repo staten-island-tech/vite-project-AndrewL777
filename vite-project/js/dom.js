@@ -1,4 +1,4 @@
-import "/style.css";
+import "../styles/style.css";
 import { foods } from "./food.js";
 
 const Dom = {
@@ -9,20 +9,52 @@ const Dom = {
   des: document.getElementById("des"),
 };
 
-<<<<<<< HEAD
+document.getElementById("theme").addEventListener("click", function(){
+  if (document.body.classList.contains("light")) {
+  document.body.classList= ["dark"];  
+  } else {
+    document.body.classList=["light"];
+  }
+});
+
+const mendiv = 
+document.querySelector("#men")
+
+document.querySelector("#veg").addEventListener("click", function (){
+  mendiv.innerHTML='';
+})
+
+document.querySelector("#main").addEventListener("click", function (){
+  mendiv.innerHTML='';
+})
+
+document.querySelector("#drink").addEventListener("click", function (){
+  mendiv.innerHTML='';
+})
+
+document.querySelector("#des").addEventListener("click", function (){
+  mendiv.innerHTML='';
+})
+
+
+Dom.main.addEventListener("click", function () {
+  Allfoods();
+  
+});
+
 Dom.des.addEventListener("click", function () {
   Desserts();
-  reset();
+ 
 });
 
 Dom.drink.addEventListener("click", function () {
   Drinks();
-  reset();
+ 
 });
 
 Dom.veg.addEventListener("click", function () {
   Vegans();
-  reset();
+ 
 });
 
 function Desserts() {
@@ -33,7 +65,7 @@ function Desserts() {
         "beforeend",
         `
       <div class="card">
-<h1>${menu.name}</h1>
+      <h1 class="dess">${menu.name}</h1>
 <img class src="${menu.img}" /><img>
 <h3 class="price">${menu.price}</h3>
 
@@ -52,7 +84,7 @@ function Drinks() {
         "beforeend",
         `
       <div class="card">
-<h1>${menu.name}</h1>
+<h1 class="drin">${menu.name}</h1>
 <img class src="${menu.img}" /><img>
 <h3 class="price">${menu.price}</h3>
 
@@ -71,7 +103,7 @@ function Vegans() {
         "beforeend",
         `
       <div class="card">
-<h1>${menu.name}</h1>
+      <h1 class="vegs">${menu.name}</h1>
 <img class src="${menu.img}" /><img>
 <h3 class="price">${menu.price}</h3>
 
@@ -86,22 +118,9 @@ function Allfoods() {
   foods.forEach((menu) =>
     Dom.men.insertAdjacentHTML(
       "beforeend",
-=======
-Dom.main.addEventListener("click", () => {
-  const men = document.querySelector('#men');
-
-  everything();
-
-});
-
-function everything() {
-  foods.forEach(
-    foods.insertAdjacentHTML(
-      "afterend",
->>>>>>> 8a762e1903cfe89380cb83a7730474a23d377493
       `
       <div class="card">
-<h1>${menu.name}</h1>
+      <h1 class="all">${menu.name}</h1>
 <img class src="${menu.img}" /><img>
 <h3 class="price">${menu.price}</h3>
 </div>
@@ -109,42 +128,3 @@ function everything() {
     )
   );
 }
-
-<<<<<<< HEAD
-Allfoods();
-=======
-
-// function drinks() {
-// Dom.foods
-//   .filter((food) => food.type.includes("Drink"))
-//   .forEach((food) =>
-//     insertAdjacentHTML(
-//         "afterend",
-//         `
-//     <div class="card">
-//     <img class src="${foods.img}" /><img>
-//     <h2 class="name">${foods.name}</h2>
-//     <h3 class="price">${foods.price}</h3>
-//     </div>
-//     `
-//       )
-//     );
-// }
-
-// function allfood() {
-//   Dom.foods
-//     .filter((food) => food.type.includes("Dish"))
-//     .forEach((food) =>
-//       insertAdjacentHTML(
-//         "afterend",
-//         `
-//     <div class="card">
-//     <img class src="${foods.img}" /><img>
-//     <h2 class="name">${foods.name}</h2>
-//     <h3 class="price">${foods.price}</h3>
-//     </div>
-//     `
-//       )
-//     );
-// }
->>>>>>> 8a762e1903cfe89380cb83a7730474a23d377493
