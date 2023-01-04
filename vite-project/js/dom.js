@@ -9,52 +9,46 @@ const Dom = {
   des: document.getElementById("des"),
 };
 
-document.getElementById("theme").addEventListener("click", function(){
+document.getElementById("theme").addEventListener("click", function () {
   if (document.body.classList.contains("light")) {
-  document.body.classList= ["dark"];  
+    document.body.classList = ["dark"];
   } else {
-    document.body.classList=["light"];
+    document.body.classList = ["light"];
   }
 });
 
-const mendiv = 
-document.querySelector("#men")
+const mendiv = document.querySelector("#men");
 
-document.querySelector("#veg").addEventListener("click", function (){
-  mendiv.innerHTML='';
-})
+document.querySelector("#veg").addEventListener("click", function () {
+  mendiv.innerHTML = "";
+});
 
-document.querySelector("#main").addEventListener("click", function (){
-  mendiv.innerHTML='';
-})
+document.querySelector("#main").addEventListener("click", function () {
+  mendiv.innerHTML = "";
+});
 
-document.querySelector("#drink").addEventListener("click", function (){
-  mendiv.innerHTML='';
-})
+document.querySelector("#drink").addEventListener("click", function () {
+  mendiv.innerHTML = "";
+});
 
-document.querySelector("#des").addEventListener("click", function (){
-  mendiv.innerHTML='';
-})
-
+document.querySelector("#des").addEventListener("click", function () {
+  mendiv.innerHTML = "";
+});
 
 Dom.main.addEventListener("click", function () {
   Allfoods();
-  
 });
 
 Dom.des.addEventListener("click", function () {
   Desserts();
- 
 });
 
 Dom.drink.addEventListener("click", function () {
   Drinks();
- 
 });
 
 Dom.veg.addEventListener("click", function () {
   Vegans();
- 
 });
 
 function Desserts() {
@@ -128,3 +122,5 @@ function Allfoods() {
     )
   );
 }
+
+Allfoods();
